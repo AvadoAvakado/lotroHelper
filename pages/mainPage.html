@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <style type="text/css">
+        div#clothesAndJewelery, div#blocks {
+            display: flex;
+        }
+
+        div#popupContainer {
+            width:100%;
+            min-height:100%;
+            background-color: rgba(0,0,0,0.5);
+            overflow:hidden;
+            position:fixed;
+            top:0px;
+            display:none;
+        }
+
+        div#itemSearchPopup {
+            background-color: coral;
+            width: 10em;
+            height: 25em;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display :none;
+        }
+
+        div#inputHolder {
+            margin: auto;
+            width: 8em;
+        }
+
+        input#itemSearch {
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav><button id="addBlock">+</button></nav>
+    <div id="blocks">
+        <div id="block">
+            <div id="clothesAndJewelery">
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="image" name="earring" src="/jewelery/ear1.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="earring" src="/jewelery/ear2.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="necklance" src="/jewelery/necklance.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="braclet" src="/jewelery/braclet1.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="braclet" src="/jewelery/braclet2.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="ring" src="/jewelery/ring1.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="ring" src="/jewelery/ring2.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="pocket" src="/jewelery/pocket.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="image" name="head" src="/armour/head.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="shoulder" src="/armour/shoulder.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="back" src="/armour/back.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="chest" src="/armour/chest.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="gloves" src="/armour/gloves.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="legs" src="/armour/legs.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="image" name="feet" src="/armour/feet.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="weaponAndClass">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="image" name="weapon" src="/weapon/primaryWeapon.png" />
+                        </td>
+                        <td>
+                            <input type="image" name="weapon" src="/weapon/secondaryWeapon.png" />
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <input type="image" name="rangedWeapon" src="/weapon/rangedWeapon.png" />
+                        </td>
+                        <td>
+                            <input type="image" name="weapon" src="/weapon/class.png" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button id="delete" disabled>X</button>
+        </div>
+    </div>
+
+    <div id="popupContainer">
+        <div id="itemSearchPopup">
+            <div id="inputHolder">
+                <input id="itemSearch" type="text"></input>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/resources/page.js">
+
+    </script>
+
+    
+</body>
+
+</html>
